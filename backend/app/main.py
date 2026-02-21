@@ -6,26 +6,38 @@ from typing import Annotated
 import pickle
 import os
 import requests
+import gdown
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 
 load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
-
 # paths
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SIM_PATH = os.path.join(BASE_DIR, "model", "movie.pkl")
 DICT_PATH = os.path.join(BASE_DIR, "model", "movie_dict.pkl")
 
+# download models if not present
+
+def download_models():
+    os.makedirs(os.path.join(BASE_DIR, "model"), exist_ok=True)
+    if not os.path.exists(SIM_PATH):
+        gdown.download(id="1LNtGsom8cegcHntUn-5cCQZbEkcM4NGa", output=SIM_PATH, quiet=False)
+    if not os.path.exists(DICT_PATH):
+        gdown.download(id="1Ymo94q5WiZzmOf-sWDii-j8wVoH89YZE", output=DICT_PATH, quiet=False)
+
+download_models()
+
 # load model
 with open(SIM_PATH, "rb") as f:
     similarity = pickle.load(f)
-
 with open(DICT_PATH, "rb") as f:
     movie_dict = pickle.load(f)
-    
-    
+
+
+
 df = pd.DataFrame(movie_dict)
 
 app = FastAPI()

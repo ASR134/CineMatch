@@ -24,3 +24,4 @@ Thumbs.db
 # ML models (big files - never push)
 backend/app/model/*.pkl
 *.pklbackend/app/model/*.pkl
+backend/app/model/*.pkl

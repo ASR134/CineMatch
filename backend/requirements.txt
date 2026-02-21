@@ -3,3 +3,4 @@ uvicorn==0.41.0
 pandas
 requests
 python-dotenv==1.2.1
+gdown
