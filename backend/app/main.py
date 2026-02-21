@@ -77,6 +77,14 @@ def movie_poster_url(movie_id):
     
 # api endpoints
 
+
+# Render pings this nicely
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
+
 @app.get("/movies")
 def get_movies():
     return {"movies":df["title"].to_list()}
