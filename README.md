@@ -8,19 +8,21 @@ CineMatch is a full-stack movie recommendation system — a **FastAPI** backend 
 
 ## 🗂️ Project Structure
 
+
 ```
-cinematch/
-├── backend/
-│   ├── main.py               # FastAPI app — ML model + TMDB integration
-│   ├── model/
-│   │   ├── movie.pkl         # Cosine similarity matrix (auto-downloaded)
-│   │   └── movie_dict.pkl    # Movie metadata DataFrame (auto-downloaded)
-│   └── .env                  # TMDB API key (not committed)
-│
-├── frontend/
-│   └── app.py                # Streamlit UI
-│
-└── README.md
+CineMatch
+├─ backend
+│  ├─ app
+│  │  ├─ main.py
+│  │  └─ model
+│  │     └─ model.pkl
+|  |     |_ model_dict.pkl 
+│  └─ requirements.txt
+└─ frontend
+   ├─ app.py
+   ├─ Dockerfile
+   └─ requirements.txt
+
 ```
 
 ---
