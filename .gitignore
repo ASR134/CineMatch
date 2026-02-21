@@ -1,5 +1,6 @@
 # Secrets
 .env
+backend/.env
 
 # Python cache
 __pycache__/
@@ -14,9 +15,12 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Streamlit cache (optional)
+# Streamlit cache
 .streamlit/
 
+# VS Code
 .vscode/
-backend/model/*.pklbackend/app/model/*.pkl
-backend/model/*.pkl
+
+# ML models (big files - never push)
+backend/app/model/*.pkl
+*.pkl
