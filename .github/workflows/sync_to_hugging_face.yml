@@ -28,10 +28,10 @@ jobs:
           git remote remove hf || true
           git remote add hf https://ASR135:${HF_TOKEN}@huggingface.co/spaces/ASR135/movie-recommender-ui
 
-      - name: Pull HF Space history (if exists)
+      - name: Rebase on HF Space main
         run: |
-          git fetch hf || true
-          git merge hf/main --allow-unrelated-histories || true
+          git fetch hf
+          git rebase hf/main || git rebase --abort
 
       - name: Push to Hugging Face Space
         run: |
