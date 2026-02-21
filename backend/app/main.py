@@ -47,7 +47,7 @@ origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = origins,
+    allow_origins = ["*"],
     allow_credentials = True,
     allow_methods = ["*"],
     allow_headers = ["*"]
@@ -116,5 +116,5 @@ def movie_recommendations(user_input : movie_input):
             })
         
         
-    return JSONResponse(status_code=200,content={"recommended movies" : L_movies})
+    return JSONResponse(status_code=200,content={"recommended_movies" : L_movies})
         

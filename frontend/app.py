@@ -17,7 +17,7 @@ def fetch_recommended_movies(option):
         res = requests.post(f"{API_URL}/recommend",json={"movie":option})
         
         if res.status_code == 200:
-            recommendations = res.json()["recommended movies"]
+            recommendations = res.json()["recommended_movies"]
             return recommendations
     except Exception as e:
         st.error(f"Could not fetch recommendations: {e}")
