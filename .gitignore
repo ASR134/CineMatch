@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache (optional)
+.streamlit/
+
+.vscode/
