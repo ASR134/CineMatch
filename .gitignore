@@ -25,3 +25,4 @@ Thumbs.db
 backend/app/model/*.pkl
 *.pklbackend/app/model/*.pkl
 backend/app/model/*.pkl
+hf-ui/

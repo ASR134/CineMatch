@@ -8,7 +8,8 @@ movie_recommendation_system
 │  │     └─ .tmp.driveupload
 │  └─ requirements.txt
 └─ frontend
-   ├─ app.py
-   └─ requirements.txt
+   ├─ Dockerfile
+   ├─ requirements.txt
+   └─ streamlit_app.py
 
 ```
