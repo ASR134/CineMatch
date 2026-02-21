@@ -66,7 +66,7 @@ st.markdown("""
     margin-top: 1rem;
     font-size: 1rem;
     color: #7a7875;
-    font-weight: 300;
+    font-weight: 300;ui
     }
 
   /* ── Divider ── */
