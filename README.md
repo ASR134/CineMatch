@@ -1,13 +1,14 @@
+
+```
 movie_recommendation_system
 ├─ backend
 │  ├─ app
 │  │  ├─ main.py
 │  │  └─ model
-│  │     ├─ movie.pkl
-│  │     └─ movie_dict.pkl
+│  │     └─ .tmp.driveupload
 │  └─ requirements.txt
-├─ frontend
-│  ├─ app.py
-│  └─ requirements.txt
-└─ README.md
+└─ frontend
+   ├─ app.py
+   └─ requirements.txt
 
+```
