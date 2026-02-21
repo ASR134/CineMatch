@@ -18,4 +18,5 @@ Thumbs.db
 .streamlit/
 
 .vscode/
+backend/model/*.pklbackend/app/model/*.pkl
 backend/model/*.pkl
