@@ -64,7 +64,7 @@ class movie_input(BaseModel):
 
 def movie_poster_url(movie_id):
     search_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={TMDB_API_KEY}" # movie details
-    res = requests.get(search_url,timeout=10)
+    res = requests.get(search_url,timeout=60)
     res.raise_for_status()
     
     data = res.json()

@@ -234,7 +234,7 @@ st.markdown("""
 @st.cache_data(show_spinner=False)
 def fetch_movies():
     try:
-        res = requests.get(f"{API_URL}/movies", timeout=10)
+        res = requests.get(f"{API_URL}/movies", timeout=60)
         return res.json()["movies"]
     except Exception:
         return []
