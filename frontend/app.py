@@ -2,7 +2,6 @@ import streamlit as st
 import requests
 
 API_URL = "https://movie-recommender-pn4m.onrender.com"
-
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="CineMatch",
@@ -231,7 +230,6 @@ st.markdown("""
 
 
 # ── Data fetching ─────────────────────────────────────────────────────────────
-@st.cache_data(show_spinner=False)
 def fetch_movies():
     try:
         res = requests.get(f"{API_URL}/movies", timeout=60)
