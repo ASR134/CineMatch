@@ -231,6 +231,6 @@ TMDB returned a null `poster_path` for that film, or the movie ID in the dataset
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
+----
 
 <p align="center">Made with ☕ and a love of cinema</p>
