@@ -1,7 +1,5 @@
 # 🎬 CineMatch — AI-Powered Movie Recommender
 
-> *Tell us one film you love. We'll find five more you'll adore.*
-
 CineMatch is a full-stack movie recommendation system — a **FastAPI** backend serving a content-based ML model, paired with a **Streamlit** frontend styled with a dark, cinematic UI. Pick any film, hit **Discover**, and receive five tailored recommendations with posters fetched live from TMDB.
 
 ---
